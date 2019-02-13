@@ -4,11 +4,11 @@ module.exports = (app) => {
         res.render('welcome');
     });
 
-    app.get('/login', (req, res) => {
-        res.send('Login');
+    app.get('/users/login', (req, res) => {
+        res.render('login');
     });
 
-    app.get('/register', (req, res) => {
-        res.send('Register');
+    app.get('/users/register', (req, res) => {
+        res.render('register');
     });
 }
