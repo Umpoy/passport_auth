@@ -11,4 +11,8 @@ module.exports = (app) => {
     app.get('/users/register', (req, res) => {
         res.render('register');
     });
+
+    app.get('/dashboard', (req, res) => {
+        res.render('dashboard');
+    })
 }
